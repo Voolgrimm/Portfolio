@@ -28,30 +28,24 @@ discoverBtn.onclick = function () {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Le texte que vous voulez afficher
   let textToType =
     "Bienvenue ! Tout d'abord laisse moi me présenter je suis le professeur Kaude. \n Mon travail est de te faire découvrir le tout nouvel arrivant\n de notre monde, JIM ! Prêt ? clique sur découvrir !";
 
-  // L'élément où le texte sera affiché
   let typedBubble = document.getElementById("typedBubble");
 
-  // Délai entre chaque lettre (en millisecondes)
   let typingSpeed = 30;
 
-  // Fonction pour afficher le texte lettre par lettre
   function typeText() {
     let index = 0;
     let intervalId = setInterval(function () {
       typedBubble.textContent += textToType[index];
       index++;
 
-      // Arrêtez l'animation lorsque tout le texte a été affiché
       if (index === textToType.length) {
         clearInterval(intervalId);
       }
     }, typingSpeed);
   }
 
-  // Appelez la fonction pour commencer l'animation lorsque la page est chargée
   typeText();
 });

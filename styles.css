@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: center; /* Pour centrer les éléments verticalement */
+  align-items: center;
   background-color: #fa0000;
   color: #fff;
   padding: 10px;
