@@ -1,0 +1,184 @@
+body {
+  background-color: #ffffff;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center; /* Pour centrer les éléments verticalement */
+  background-color: #fa0000;
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Sidenav menu */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -200px;
+  background-color: #fa0000;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+  left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+  display: flex;
+  align-content: flex-start;
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.bubble-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.img-prof {
+  height: auto;
+  max-width: 200px;
+}
+
+.retro-textarea {
+  min-height: 100px;
+  min-width: 135px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 15px;
+  overflow-y: auto;
+  font-family: "Courier New", monospace;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CTA-button {
+  align-items: center;
+  background: #fa0000;
+  border: 3px solid #000000;
+  border-radius: 30px;
+  padding: 20px 45px;
+  color: #ffffff;
+
+  font: bold 35px/1 "Arvo", serif;
+  text-align: center;
+}
+@media screen and (max-width: 300px) {
+  .CTA-button {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.profile {
+  padding: 20px;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-size: 24px;
+}
+
+.profile-title {
+  font-style: italic;
+  color: #777;
+}
+
+.skills {
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.skills-category {
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project {
+  margin-top: 30px;
+}
+
+.project-item {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #39393a;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#typedText {
+  font-size: 18px;
+  font-family: "Courier New", monospace;
+  white-space: pre;
+}
